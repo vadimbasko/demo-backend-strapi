@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "name": "Company"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyName": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "staffCount": {
+      "type": "integer"
+    }
+  }
+}
