@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reset-password",
+      "handler": "reset-password.resetGet",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reset-password",
+      "handler": "reset-password.resetPost",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
