@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sys-users",
+      "handler": "sys-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sys-users/count",
+      "handler": "sys-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sys-users/:id",
+      "handler": "sys-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sys-users",
+      "handler": "sys-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sys-users/:id",
+      "handler": "sys-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sys-users/:id",
+      "handler": "sys-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

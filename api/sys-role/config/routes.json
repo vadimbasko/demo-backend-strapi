@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sys-roles",
+      "handler": "sys-role.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sys-roles/count",
+      "handler": "sys-role.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sys-roles/:id",
+      "handler": "sys-role.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sys-roles",
+      "handler": "sys-role.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sys-roles/:id",
+      "handler": "sys-role.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sys-roles/:id",
+      "handler": "sys-role.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sys_roles",
+  "info": {
+    "name": "Sys Role"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "webAccess": {
+      "type": "boolean"
+    },
+    "mobileAccess": {
+      "type": "boolean"
+    }
+  }
+}
