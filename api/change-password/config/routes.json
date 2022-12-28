@@ -2,16 +2,16 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/reset-password",
-      "handler": "reset-password.resetGet",
+      "path": "/change-password",
+      "handler": "change-password.resetGet",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/reset-password",
-      "handler": "reset-password.resetPost",
+      "path": "/change-password",
+      "handler": "change-password.resetPost",
       "config": {
         "policies": []
       }
