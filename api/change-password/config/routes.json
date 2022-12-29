@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/change-password",
-      "handler": "change-password.resetGet",
+      "handler": "change-password.changePasswordGet",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "POST",
       "path": "/change-password",
-      "handler": "change-password.resetPost",
+      "handler": "change-password.changePasswordPost",
       "config": {
         "policies": []
       }

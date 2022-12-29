@@ -6,11 +6,12 @@
  */
 
 module.exports = {
-  async resetGet(ctx, next) {
-    console.log("resetGet: controller");
+  async changePasswordGet(ctx, next) {
+    console.log("changePasswordGet: controller", ctx.params);
     return {status: "OK"}
   },
-  async resetPost(ctx, next) {
-    console.log("resetPost: controller");
+  async changePasswordPost(ctx, next) {
+    console.log("changePasswordPost: controller", ctx.request.body);
+    return {status: "OK"}
   },
 };
