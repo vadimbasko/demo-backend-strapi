@@ -6,12 +6,10 @@
  */
 
 module.exports = {
-  async changePasswordGet(ctx, next) {
-    console.log("changePasswordGet: controller", ctx.params);
-    return {status: "OK"}
-  },
   async changePasswordPost(ctx, next) {
     console.log("changePasswordPost: controller", ctx.request.body);
-    return {status: "OK"}
+    const { newPassword, confirmPassword } = ctx.request.body;
+    if (newPassword === 'admin') throw new Error();
+    return newPassword === confirmPassword ? {operationStatus: "SUCCESS"} : {operationStatus: "FAILED"};
   },
 };

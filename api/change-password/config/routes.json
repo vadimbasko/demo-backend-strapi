@@ -1,14 +1,6 @@
 {
   "routes": [
     {
-      "method": "GET",
-      "path": "/change-password",
-      "handler": "change-password.changePasswordGet",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "POST",
       "path": "/change-password",
       "handler": "change-password.changePasswordPost",
